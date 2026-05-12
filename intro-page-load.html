@@ -75,7 +75,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: var(--void
 
 #logo-top {
   position: absolute;
-  top: 6vh;
+  top: 1vh;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -94,6 +94,14 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: var(--void
   display: block;
   filter: drop-shadow(0 0 12px rgba(245,215,122,0.5));
 }
+
+.logo-center-img{
+  height: 150px;
+}
+.logo-center-img-small{
+  height: 100px;
+}
+
 .we-wordmark {
   font-family: 'Cinzel', serif;
   font-weight: 900;
@@ -587,23 +595,9 @@ html, body {
 <!-- UI OVERLAY -->
 <div id="ui-overlay">
   <div id="logo-top">
-    <svg class="crown-svg-top" viewBox="0 0 110 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="cg1" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#C9A84C"></stop>
-          <stop offset="30%" stop-color="#F5D77A"></stop>
-          <stop offset="60%" stop-color="#E8C252"></stop>
-          <stop offset="100%" stop-color="#C9A84C"></stop>
-        </linearGradient>
-      </defs>
-      <path d="M5,55 L18,18 L31,42 L44,10 L57,42 L70,18 L83,42 L96,18 L109,55" stroke="url(#cg1)" stroke-width="3.5" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
-      <line x1="5" y1="65" x2="109" y2="65" stroke="url(#cg1)" stroke-width="2"></line>
-      <circle cx="44" cy="10" r="4" fill="#F5D77A"></circle>
-      <circle cx="18" cy="18" r="3" fill="#C9A84C"></circle>
-      <circle cx="96" cy="18" r="3" fill="#C9A84C"></circle>
-    </svg>
-    <div class="we-wordmark">WORLD ÉLITE</div>
-    <div class="we-tagline">Real Estate &amp; Lifestyle</div>
+    <img class="logo-center-img-small" src="https://cdn.prod.website-files.com/69f02d41807ce3fac68c65a7/69f02d58c31891fa7fdb1b94_cf9b126ab2daaaae5dd83ab776ef69a1a7e9c1f0.png" alt="" />
+    <!--<div class="we-wordmark">WORLD ÉLITE</div>-->
+    <!--<div class="we-tagline">Real Estate &amp; Lifestyle</div>-->
   </div>
 
   <div class="region-badge" id="badge-med">
@@ -620,35 +614,18 @@ html, body {
   </div>
 
   <div id="logo-center">
-    <svg class="crown-svg-center" viewBox="0 0 110 75" fill="none">
-      <defs>
-        <linearGradient id="cg2" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#C9A84C"></stop>
-          <stop offset="35%" stop-color="#F5D77A"></stop>
-          <stop offset="55%" stop-color="#FFE680"></stop>
-          <stop offset="100%" stop-color="#C9A84C"></stop>
-        </linearGradient>
-        <filter id="crownFilter">
-          <feGaussianBlur stdDeviation="2" result="blur"></feGaussianBlur>
-          <feMerge><feMergeNode in="blur"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge>
-        </filter>
-      </defs>
-      <path d="M5,55 L18,18 L31,42 L44,10 L57,42 L70,18 L83,42 L96,18 L109,55" stroke="url(#cg2)" stroke-width="3.5" fill="none" stroke-linejoin="round" stroke-linecap="round" filter="url(#crownFilter)"></path>
-      <line x1="5" y1="65" x2="109" y2="65" stroke="url(#cg2)" stroke-width="2" filter="url(#crownFilter)"></line>
-      <circle cx="44" cy="10" r="5" fill="#FFE680" filter="url(#crownFilter)"></circle>
-      <circle cx="18" cy="18" r="3.5" fill="#F5D77A" filter="url(#crownFilter)"></circle>
-      <circle cx="96" cy="18" r="3.5" fill="#F5D77A" filter="url(#crownFilter)"></circle>
-    </svg>
-    <div class="we-wordmark-large">WORLD ÉLITE</div>
-    <div class="we-tagline-large">Real Estate &amp; Lifestyle</div>
+    <img class="logo-center-img" src="https://cdn.prod.website-files.com/69f02d41807ce3fac68c65a7/69f02d58c31891fa7fdb1b94_cf9b126ab2daaaae5dd83ab776ef69a1a7e9c1f0.png" alt="" />
+    <!--<div class="we-wordmark-large">WORLD ÉLITE</div>-->
+    <!--<div class="we-tagline-large">Real Estate &amp; Lifestyle</div>-->
   </div>
 
-  <div class="section-label" id="lbl-re">REAL ESTATE</div>
-  <div class="section-label" id="lbl-yachts">YACHTS</div>
-  <div class="section-label" id="lbl-lifestyle">LIFESTYLE</div>
-  <div class="section-label" id="lbl-borderless">BORDERLESS</div>
-  <div class="section-label" id="lbl-private">PRIVATE ISLANDS</div>
-  <div class="section-label" id="lbl-concierge">CONCIERGE</div>
+  <div class="section-label" id="lbl-re">YACHTS EXPERIENCES</div>
+  <div class="section-label" id="lbl-yachts">REAL ESTATE</div>
+  <div class="section-label" id="lbl-lifestyle">LIFESTYLE PARTNERS</div>
+  <div class="section-label" id="lbl-borderless">WORLD ÉLITE SERVICES</div>
+  <div class="section-label" id="lbl-private">MAGAZINE</div>
+  <div class="section-label" id="lbl-concierge">BOUTIQUE</div>
+  <div class="section-label" id="lbl-concierge">AMBASSADORS PORTAL</div>
 
   <div id="phase-subtitle"></div>
 </div>
@@ -656,21 +633,19 @@ html, body {
 <!-- NAVIGATION -->
 <nav id="main-nav">
   <div class="nav-inner">
-    <a href="#">MEDITERRANEAN</a>
-    <div class="nav-line"></div>
-    <a href="#">CARIBBEAN</a>
-    <div class="nav-line"></div>
-    <a href="#">DUBAI</a>
+    <a href="#">YACHTS EXPERIENCES</a>
     <div class="nav-line"></div>
     <a href="#">REAL ESTATE</a>
     <div class="nav-line"></div>
-    <a href="#">YACHTS</a>
+    <a href="#">LIFESTYLE PARTNERS</a>
     <div class="nav-line"></div>
-    <a href="#">LIFESTYLE</a>
+    <a href="#">WORLD ÉLITE SERVICES</a>
     <div class="nav-line"></div>
-    <a href="#">PRIVATE ISLANDS</a>
+    <a href="#">MAGAZINE</a>
     <div class="nav-line"></div>
-    <a href="#">BORDERLESS</a>
+    <a href="#">BOUTIQUE</a>
+    <div class="nav-line"></div>
+    <a href="#">AMBASSADORS PORTAL</a>
   </div>
 </nav>
 
